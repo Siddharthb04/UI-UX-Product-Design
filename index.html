@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go-X</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Go -X - TensorGo</h2>
+
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#analytics" class="nav-link">Analytics</a>
+                <a href="#communication" class="nav-link">Communication</a>
+                <a href="#benefits" class="nav-link">Benefits</a>
+                <a href="#use-cases" class="nav-link">Use Cases</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="particles"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Unlock the future of communication with <span class="neon-text">Go-X!</span></h1>
+            <p class="hero-description">
+                Featuring voice and face biometrics, real-time analytics, and personalized insights. 
+                Transform meetings into dynamic discussions, enhance engagement with physiological analytics, 
+                and boost sales with comprehensive metrics. Discover new possibilities with Go-X.
+            </p>
+            <div class="hero-buttons">
+                <button class="cta-button primary" onclick="scrollToSection('analytics')">
+                    <span>Explore Categories</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="cta-button secondary" onclick="scrollToSection('benefits')">
+                    <span>Learn More</span>
+                    <i class="fas fa-play"></i>
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro">
+        <div class="container">
+            <h2 class="section-title">Unleash the power of tailored insights on our SaaS playground</h2>
+            <div class="intro-content">
+                <p>
+                    Go-X elevates virtual engagements by transforming them into highly productive powerhouses. 
+                    Our cutting-edge platform combines advanced AI technology with intuitive design to deliver 
+                    unprecedented insights into communication patterns, engagement levels, and performance metrics.
+                </p>
+                <p>
+                    Whether you're conducting business meetings, educational sessions, or healthcare consultations, 
+                    Go-X provides the tools you need to optimize every interaction and achieve your goals with 
+                    confidence and precision.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics Category Section -->
+    <section id="analytics" class="category-section analytics-section">
+        <div class="particles"></div>
+        <div class="category-content">
+            <h2 class="category-title">Analytics & Performance</h2>
+            <p class="category-description">
+                Transform data into actionable insights with our advanced analytics platform. 
+                Track performance metrics, engagement levels, and conversion rates to optimize your communication strategy.
+            </p>
+            <div class="container">
+                <div class="category-grid">
+                    <div class="category-card analytics-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="category-image">
+                            <img src="assets/Meeting-Analytics.png" alt="Meeting Intelligence Analytics" class="category-img">
+                        </div>
+                        <div class="category-info">
+                            <h3>Meeting Intelligence Analytics</h3>
+                            <p>Maximize productivity with AI-powered meeting analytics. Track engagement, sentiment, and key discussion points across 10+ languages with real-time transcription and intelligent summarization.</p>
+                            <button class="category-btn">Explore Analytics <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="category-card analytics-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="category-image">
+                            <img src="assets/Sales-1.png" alt="Sales Performance Analytics" class="category-img">
+                        </div>
+                        <div class="category-info">
+                            <h3>Sales Performance Analytics</h3>
+                            <p>Elevate your sales strategy with comprehensive performance metrics. Track conversion rates, client engagement, and revenue optimization to maximize your sales potential.</p>
+                            <button class="category-btn">Explore Sales <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="category-card analytics-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="category-image">
+                            <img src="assets/dashboard.png" alt="Analytics Dashboard" class="category-img">
+                        </div>
+                        <div class="category-info">
+                            <h3>Analytics Dashboard</h3>
+                            <p>Comprehensive dashboard with real-time metrics, performance indicators, and data visualization tools to track and optimize your communication effectiveness.</p>
+                            <button class="category-btn">Explore Dashboard <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biometric Category Section -->
+    <section id="biometric" class="category-section biometric-section">
+        <div class="particles"></div>
+        <div class="category-content">
+            <h2 class="category-title">Biometric & Health</h2>
+            <p class="category-description">
+                Advanced biometric technology for secure authentication and health monitoring. 
+                Ensure authentic communication while monitoring vital signs and wellness indicators.
+            </p>
+            <div class="container">
+                <div class="category-grid">
+                    <div class="category-card biometric-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="category-image">
+                            <img src="assets/Bio.png" alt="Biometric Authentication" class="category-img">
+                        </div>
+                        <div class="category-info">
+                            <h3>Biometric Authentication</h3>
+                            <p>Boost the credibility of your interactions with advanced biometric verification. Ensure secure, authentic communication in every conversation with voice and facial recognition.</p>
+                            <button class="category-btn">Explore Biometrics <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="category-card biometric-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="category-image">
+                            <img src="assets/Physiological.png" alt="Physiological Analytics" class="category-img">
+                        </div>
+                        <div class="category-info">
+                            <h3>Physiological Analytics</h3>
+                            <p>Transform health insights into actionable data. Monitor vital signs, stress levels, and wellness indicators to enhance patient outcomes and optimize healthcare delivery.</p>
+                            <button class="category-btn">Explore Health <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engagement Category Section -->
+    <section id="engagement" class="category-section engagement-section">
+        <div class="particles"></div>
+        <div class="category-content">
+            <h2 class="category-title">Engagement & Focus</h2>
+            <p class="category-description">
+                Unlock deeper insights into human behavior and attention patterns. 
+                Analyze emotional states, body language, and focus levels for more impactful interactions.
+            </p>
+            <div class="container">
+                <div class="category-grid">
+                    <div class="category-card engagement-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="category-image">
+                            <img src="assets/emotions-1.png" alt="Emotion Analysis" class="category-img">
+                        </div>
+                        <div class="category-info">
+                            <h3>Emotion & Head Pose</h3>
+                            <p>Unlock deeper insights into human behavior and communication patterns. Analyze emotional states and body language to create more impactful and meaningful interactions.</p>
+                            <button class="category-btn">Explore Emotions <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="category-card engagement-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="category-image">
+                            <img src="assets/Eye-1.png" alt="Eye Tracking Analytics" class="category-img">
+                        </div>
+                        <div class="category-info">
+                            <h3>Focus Analytics with Eye Gaze Tracking</h3>
+                            <p>Boost engagement and attention with advanced eye tracking technology. Monitor focus levels and attention patterns to create more effective and interactive experiences.</p>
+                            <button class="category-btn">Explore Focus <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Communication Category Section -->
+    <section id="communication" class="category-section communication-section">
+        <div class="particles"></div>
+        <div class="category-content">
+            <h2 class="category-title">Communication Enhancement</h2>
+            <p class="category-description">
+                Transform your digital presence with sophisticated communication tools. 
+                Enhance professional image through advanced analytics and intelligent feedback systems.
+            </p>
+            <div class="container">
+                <div class="category-grid">
+                    <div class="category-card communication-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="category-image">
+                            <img src="assets/CommunicationEnhancement.png" alt="Communication Enhancement" class="category-img">
+                        </div>
+                        <div class="category-info">
+
+                            <h3>Communication Enhancement</h3>
+                            <p>Transform your digital presence with sophisticated communication tools. Enhance your professional image through advanced analytics and intelligent feedback systems.</p>
+                            <button class="category-btn">Explore Communication <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="category-card communication-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="category-image">
+                            <img src="assets/chatbot.png" alt="AI Chatbot Assistant" class="category-img">
+                        </div>
+                        <div class="category-info">
+                            <h3>AI Chatbot Assistant</h3>
+                            <p>Intelligent chatbot technology with natural language processing capabilities. Provide instant support, answer queries, and enhance user engagement through conversational AI.</p>
+                            <button class="category-btn">Explore Chatbot <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- General Category Section -->
+    <section id="general" class="category-section general-section">
+        <div class="particles"></div>
+        <div class="category-content">
+            <h2 class="category-title">General & Innovation</h2>
+            <p class="category-description">
+                Discover innovative solutions and general tools that enhance your overall experience. 
+                From brilliant ideas to versatile utilities, explore the full spectrum of Go-X capabilities.
+            </p>
+            <div class="container">
+                <div class="category-grid">
+                    <div class="category-card general-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="category-image">
+                            <img src="assets/Ideas Igniting Brilliance.png" alt="Ideas Igniting Brilliance" class="category-img">
+                        </div>
+                        <div class="category-info">
+                            <h3>Ideas Igniting Brilliance</h3>
+                            <p>Experience the next generation of communication technology that transforms every interaction into an opportunity for growth and innovation.</p>
+                            <button class="category-btn">Explore Innovation <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="category-card general-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="category-image">
+                            <img src="assets/upload.png" alt="General Tools" class="category-img">
+                        </div>
+                        <div class="category-info">
+                            <h3>General Tools & Utilities</h3>
+                            <p>Access versatile tools and utilities that enhance your overall Go-X experience. From file management to general productivity features.</p>
+                            <button class="category-btn">Explore Tools <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <h2 class="section-title">Benefits</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="fade-right" data-aos-delay="100">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Real-Time Insights</h3>
+                    <p>Get instant feedback and analytics as your conversations unfold, enabling immediate adjustments and optimizations.</p>
+                </div>
+
+                <div class="benefit-card" data-aos="fade-left" data-aos-delay="200">
+                    <div class="benefit-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Enhanced Efficiency</h3>
+                    <p>Streamline your workflow with automated analysis and intelligent recommendations that save time and boost productivity.</p>
+                </div>
+
+                <div class="benefit-card" data-aos="fade-right" data-aos-delay="300">
+                    <div class="benefit-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>Seamless Integration</h3>
+                    <p>Connect effortlessly with your existing tools and platforms for a unified experience that enhances your current workflow.</p>
+                </div>
+
+                <div class="benefit-card" data-aos="fade-left" data-aos-delay="400">
+                    <div class="benefit-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Personalized Experience</h3>
+                    <p>Enjoy tailored insights and recommendations based on your unique communication style and preferences.</p>
+                </div>
+
+                <div class="benefit-card" data-aos="fade-right" data-aos-delay="500">
+                    <div class="benefit-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Industry Wide Application</h3>
+                    <p>Versatile platform that adapts to various industries and use cases, from healthcare to education to business.</p>
+                </div>
+
+                <div class="benefit-card" data-aos="fade-left" data-aos-delay="600">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data-Driven Decision Making</h3>
+                    <p>Make informed decisions with comprehensive analytics and actionable insights that drive measurable results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="container">
+            <h2 class="section-title">Our Leadership Team</h2>
+            <div class="team-content">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="assets/Screenshot 2025-09-14 233253.png" alt="Srini Chilukuri" class="profile-image">
+                    </div>
+                    <div class="member-info">
+                        <h3>Srini Chilukuri</h3>
+                        <p class="member-role">Founder & CEO</p>
+                        <blockquote>
+                            "Succeeding with AI requires not just technology, but a deep understanding of human communication. 
+                            Go-X bridges this gap, creating an exciting journey toward more meaningful and productive interactions."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics Section -->
+    <section class="metrics">
+        <div class="container">
+            <h2 class="section-title">Metrics that define our impact</h2>
+            <div class="metrics-grid">
+                <div class="metric-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="metric-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="metric-number" data-target="99">0</div>
+                    <div class="metric-suffix">%</div>
+                    <h3>Accuracy</h3>
+                    <p>Precision in every analysis</p>
+                </div>
+
+                <div class="metric-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="metric-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="metric-number" data-target="1">0</div>
+                    <div class="metric-suffix">sec.</div>
+                    <h3>Speed</h3>
+                    <p>Real-time insights delivered fast</p>
+                </div>
+
+                <div class="metric-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="metric-icon">
+                        <i class="fas fa-toolbox"></i>
+                    </div>
+                    <div class="metric-number" data-target="50">0</div>
+                    <div class="metric-suffix">+</div>
+                    <h3>Features</h3>
+                    <p>Comprehensive tool for every need</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section id="use-cases" class="use-cases">
+        <div class="container">
+            <h2 class="section-title">Use Cases</h2>
+            <div class="use-cases-grid">
+                <div class="use-case-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="use-case-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Human Resource</h3>
+                    <p>Enhance recruitment processes, conduct better interviews, and improve employee engagement with comprehensive communication analytics.</p>
+                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="use-case-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="use-case-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Education</h3>
+                    <p>Transform online learning with engagement tracking, attention monitoring, and personalized feedback for better educational outcomes.</p>
+                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="use-case-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="use-case-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Healthcare</h3>
+                    <p>Improve patient care with physiological monitoring, stress detection, and enhanced telemedicine experiences.</p>
+                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="use-case-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="use-case-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Insurance</h3>
+                    <p>Streamline claims processing, enhance fraud detection, and improve customer service with advanced communication analytics.</p>
+                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="use-case-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="use-case-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Smart Meetings</h3>
+                    <p>Optimize meeting effectiveness with real-time engagement tracking, sentiment analysis, and intelligent meeting summaries.</p>
+                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="use-case-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="use-case-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Sales</h3>
+                    <p>Boost sales performance with conversion tracking, client engagement analysis, and personalized sales strategies.</p>
+                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Go-X - TensorGo</h3>
+                    <p>Catalyzing conversational growth</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TensorGo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
