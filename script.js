@@ -150,13 +150,14 @@ function initializeSmoothScrolling() {
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
-            
             const targetId = this.getAttribute('href');
+            if (targetId === '#home') {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                return;
+            }
             const targetSection = document.querySelector(targetId);
-            
             if (targetSection) {
                 const offsetTop = targetSection.offsetTop - 80; // Account for fixed navbar
-                
                 window.scrollTo({
                     top: offsetTop,
                     behavior: 'smooth'
